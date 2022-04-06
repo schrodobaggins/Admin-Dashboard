@@ -1,0 +1,100 @@
+/* Admin Dashboard Project
+Created using TOP
+Michael Schroeder */
+
+* {
+    font-family: monospace;
+    
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+ul {
+    list-style-type: none; /* this removes the dots on the list items*/
+
+}
+
+a {
+    font-size: 22px;
+    padding: 8px;
+    text-decoration: none; /* this removes the line under the links */
+
+}
+
+/* container css */
+.container {
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* sidebar content */
+.sidebar {
+    width: 300px;
+    background: royalblue;
+    flex-shrink: 0;
+    padding: 16px;
+    border: 1px solid blue;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-links {
+    display: list-item;
+    list-style: 50px;
+    column-gap: 10px;
+    border: 1px solid red;
+}
+
+
+/* header content */
+.header  {
+    height: 72px;
+    background: darkmagenta;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    font-size: 12px;
+    font-weight: 900;
+    border: 5px solid green;
+
+}
+
+.body {
+    flex: 1;
+    display: flex;
+}
+
+.greeting-page {
+    border: 1px solid red;
+
+}
+
+
+/* main content  */
+.main-content {
+    background: rgb(224, 224, 224);
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+}
