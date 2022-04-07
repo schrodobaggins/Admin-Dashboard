@@ -10,14 +10,11 @@ Michael Schroeder */
 body {
     margin: 0;
     min-height: 100vh;
-    display: flex;
-    flex-direction: row;
 
 }
 
 ul {
     list-style-type: none;
-
 }
 
 a {
@@ -27,41 +24,38 @@ a {
 
 }
 
+h2 {
+    text-align: center;
+}
+
                 /* container css */
 .container {
-    padding: 32px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 250px 1250px;
 }
 
 
                 /* sidebar content */
 .sidebar {
-    width: 300px;
-    background: royalblue;
-    flex-shrink: 0;
+    background: rgb(94, 134, 255);
     padding: 16px;
     border: 1px solid blue;
 }
 
 .title {
-    display: flex;
     align-items: center;
+    
 }
 
 .navigation-links {
-    display: list-item;
-    list-style: 50px;
-    column-gap: 10px;
     /* border: 1px solid red; */
 }
 
                 /* contains header, and main-content */
 .body {
     flex: 1;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
 }
 
                 /* header content */
@@ -71,7 +65,7 @@ a {
     color: white;
     display: flex;
     align-items: center;
-    padding: 0 16px;
+    padding: 25px 25px;
     font-size: 12px;    
     font-weight: 900;
     /* border: 5px solid green; */
@@ -79,24 +73,44 @@ a {
 }
 
 .greeting-page {
-    /* border: 1px solid red; */
+    border: 1px solid red;
+    font-size: 8px;
 
 }
 
                 /* main content  */
 .main-content {
-    background: rgb(224, 224, 224);
-    padding: 32px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 750px 750px;
+    max-width: 15%;
 }
 
 .card {
-    border: 1px solid #eee;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-    border-radius: 4px;
-    padding: 16px;
+    border-radius: 8px black;
+    box-shadow: 25px 50px 38px rgba(0,0,0,.06);
+    border-radius: 16px;
+    padding: 25px;
     margin: 16px;
     width: 300px;
+    
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    margin-right: 42%;
+    border-radius: 4px;
+}
+
+.announcements {
+    max-width: 300px;
+
+}
+
+.trending {
+    max-width: 300px;
+}
+
+.sidebar-container {
+    
 }
